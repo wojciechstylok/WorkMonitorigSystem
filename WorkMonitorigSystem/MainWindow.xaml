@@ -1,0 +1,23 @@
+﻿<Window x:Class="WorkMonitorigSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorkMonitorigSystem"
+        mc:Ignorable="d"
+        Title="Work Monitoring System" Height="250" Width="400"
+        WindowStartupLocation="Manual">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Label Name="Start" Content="Zacznij pracę" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="36" Background="Green" MouseEnter="Start_MouseEnter" MouseLeave="Start_MouseLeave" MouseDown="Start_MouseDown" />
+        <Label Name="Break" Content="Przerwa" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="36" Background="LightYellow" MouseEnter="Break_MouseEnter" MouseLeave="Break_MouseLeave" MouseDown="Break_MouseDown" />
+        <Label Name="Away" Content="Zaraz wracam" Grid.Row="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="36" Background="Orange" MouseEnter="Away_MouseEnter" MouseLeave="Away_MouseLeave" MouseDown="Away_MouseDown" />
+    </Grid>
+</Window>
